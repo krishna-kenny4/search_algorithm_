@@ -7,13 +7,13 @@ def search_algorithm(text, word):
 
     while text_letter_counter < len(text):
 
-        if text[text_letter_counter] == word[0]:
+        if text[text_letter_counter] == word[word_letter_counter]:
             char_lst = []
 
             for z in range(len(word)):
                 char_lst.append(text[text_letter_counter])
                 text_letter_counter += 1
-                
+
             stage_list.append(char_lst)
             text_letter_counter = text_letter_counter - (len(word) - 1)
 
